@@ -29,7 +29,7 @@ section .data
 	STDOUT    equ 1
 
 section .bss
-
+    ;Variables
     numA resb 2
     numB resb 2
     resultado resb 2
@@ -70,21 +70,23 @@ _start:
 sumar:
     mov eax, [numA]    
     mov ebx, [numB]
-    sub eax, '0'
-    sub ebx, '0'
+    sub eax, '0' ;Convierte a decimal
+    sub ebx, '0' ;Convierte a decimal
 
     add eax, ebx
-    add eax, '0'
-    mov [resultado], eax
+    add eax, '0' ;Convierte a cadena
+    mov [resultado], eax ;Guarda el valor total de la suma en la variable resultado
 
-    ;Presentar mensaje suma
- presentar_resultado_suma:   
+    ;Presentar mensaje suma y su resultado
+ presentar_resultado_suma: 
+    ;Presentar mensaje suma  
     mov eax, SYS_WRITE
     mov ebx, STDOUT
     mov ecx, msj_suma
     mov edx, len_suma
     int 80h
 
+   ;Presentar resultado de la suma
     mov eax, SYS_WRITE
     mov ebx, STDOUT
     mov ecx, resultado
