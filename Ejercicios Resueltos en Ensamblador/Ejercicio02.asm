@@ -16,7 +16,7 @@ section .data
 	STDOUT    equ 1
 
 section .bss
-
+    ;Variables
     lado resb 2   
     resultado resb 2
 
