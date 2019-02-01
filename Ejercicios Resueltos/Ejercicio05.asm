@@ -1,6 +1,7 @@
 ;Ejercicio05:
 ;Leer dos numeros desde teclado e indicar cual 
 ;es el mayor y cual es el menor
+
 section .data
 
     msj0 db 'Ingrese numero A: '
