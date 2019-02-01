@@ -1,6 +1,7 @@
 ;Ejercicio 02:
-;Calcular el área de un cuadrado ingresando
-;el valor de su lado por teclado
+;Calcular el area de un cuadrado ingresando
+;el valor de su lado por teclado.
+
 section .data
 
     msj1 db 'Ingrese el valor del lado: '
