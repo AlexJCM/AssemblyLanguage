@@ -1,5 +1,5 @@
 ;Ejercicio07:
-;Dado dos números A y B, si A es menor a B sumarlos caso 
+;Dado dos numeros A y B,  si A es menor a B sumarlos caso 
 ;contrario restarlos y presentar el resultado.
 
 section .data
