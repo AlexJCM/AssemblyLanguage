@@ -1,3 +1,6 @@
+;Leer 3 numeros por teclado y sumar el primero con el segundo
+y comparar si dicho resultado es igual al tercer numero ingresado.
+
 section .data
     msj1 db 'Suma de a b  es igual a c', 10
     len_msj1 equ $-msj1
