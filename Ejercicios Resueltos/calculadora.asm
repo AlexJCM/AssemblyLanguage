@@ -1,5 +1,5 @@
-;Realizar una calculadora que contenga un menu con las operaciones básicas
-; como son sumar, restar, multiplicar, y la opcion salir
+;Realizar una calculadora que contenga un menu con las operaciones basicas
+;como son sumar, restar, multiplicar, y la opcion salir
 
 
 section .data
