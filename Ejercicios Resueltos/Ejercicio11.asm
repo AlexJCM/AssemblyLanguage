@@ -1,4 +1,4 @@
-;Ejercicio11:
+;Ejercicio 11:
 ;Ingresar un numero entre 1 y 7 y presentar
 ;el dia de la semana correspondiente a ese numero
 
