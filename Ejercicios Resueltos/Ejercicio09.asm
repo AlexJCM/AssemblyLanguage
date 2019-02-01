@@ -1,6 +1,6 @@
 ;Ejercicio09:
 ;Dada las longuitudes de los 3 lados de un triángulo, 
-;determinar si es equilátero o no.
+;determinar si es equilátero o  no.
 
 section .data
 
