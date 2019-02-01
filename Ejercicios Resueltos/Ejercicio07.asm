@@ -1,7 +1,7 @@
 ;Ejercicio07:
-;Dado dos numeros A y B,  si A es menor a B sumarlos caso 
-;contrario restarlos y presentar el resultado.
-
+;Dado dos números A y B, si A es menor que B sumarlos caso 
+;contrario si A es mayor que B restarlos y presentar el resultado.
+;Si ambos son iguales presentar mensaje de que son iguales y salir del programa
 section .data
 
     msj1 db 'Ingrese numero A: '
@@ -66,8 +66,8 @@ calcular_mayor:
     mov eax, [numeroA]
     mov ebx, [numeroB]
     cmp eax, ebx
-    ja sumar
-    jb restar
+    ja restar
+    jb sumar
     je iguales
 
 sumar:
