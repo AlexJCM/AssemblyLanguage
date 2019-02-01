@@ -1,5 +1,6 @@
 ;Ejercicio 04:
 ;Verificar si un numero ingresado por teclado es positivo o negativo
+
 section .data
 
     msj0 db 'Ingrese un numero: '
