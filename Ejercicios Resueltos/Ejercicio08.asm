@@ -2,6 +2,7 @@
 ;Dado dos números A y B, encontrar el cociente entre
 ;A y B. Recordar que la division entre cero no es posible, de darse el caso
 ; presentar un mensaje indicando que no es posible.
+
 section .data
 
 
