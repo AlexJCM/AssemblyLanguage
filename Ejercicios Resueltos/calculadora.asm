@@ -1,7 +1,3 @@
-;Realizar una calculadora que contenga un menu con las operaciones basicas
-;como son sumar, restar, multiplicar, y la opcion salir
-
-
 section .data
     msg_titulo db  '****** MINI CALCULADORA ******',10
     len_titulo equ $-msg_titulo
@@ -12,19 +8,19 @@ section .data
     msg_numero2 db '> Ingrese el numero B: '
     len_numero2 equ $-msg_numero2
 
-    msg_all_operations dd '(S)UMA',10,'(R)ESTA', 10, '(M)ULTIPLICACION', 10, '(D)IVISION', 10, '(E)XIT', 10
+    msg_all_operations dd '(S)uma',10,'(R)esta', 10, '(M)ultiplicacion', 10, '(D)ivision', 10, '(E)xit', 10
     len_all_operations equ $-msg_all_operations
 
     msg_opcion db '> Escoja una opcion => '
     len_opcion equ $-msg_opcion
 
-    msg_invalid db '--ERROR --ESCOJA UNA OPCION VALIDA (La letra que en el parentesis)--',10
+    msg_invalid db '--ERROR --ESCOJA UNA OPCION VALIDA (La letra que esta en el parentesis)--',10, 10
     len_invalid equ $-msg_invalid
     
-    msg_result db 'RESULTADO: '
-    len_result equ $-msg_result  
+    msg_result db 'EL RESULTADO DE LA OPERACION ES: '
+    len_result equ $-msg_result
 
-    msg_repetir dd 10, 10, 'Desea:',10, '(R)EPETIR', 10, '(E)XIT',10, '> Escoja una opcion => ', 10
+    msg_repetir dd 10, 10, '¿Que desea hacer?',10, '(V)olver al menu', 10, '(E)xit',10, '> Escoja una opcion => ', 10
     len_repetir equ $-msg_repetir
    
 
@@ -214,7 +210,7 @@ desea_repetir:
 
     mov ah, [opcion]
 
-    cmp ah, 'r'
+    cmp ah, 'v'
     je leer_numeros
 
     cmp ah, 'e'
@@ -236,4 +232,7 @@ opcion_invalida_two:
 salir:
     mov eax, SYS_EXIT 
     int 80h
+
+
+
 
