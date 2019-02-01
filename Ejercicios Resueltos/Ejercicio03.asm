@@ -1,7 +1,7 @@
 ;Ejercicio 03:
 ;Calcule la nota final de dos exámenes de una asignatura
 ;ingresado desde el teclado. Las dos notas deben ser 
-;ingresadas entre un rango de 0 a 9.  
+;ingresadas entre un rango de 0 a 9  
 
 section .data
 
