@@ -1,5 +1,5 @@
 ;Ejercicio 01: Obtener dos numeros enteros por teclado,
-; calcule la suma, la resta, la división y la multiplicación
+; calcule la suma, la resta, la division y la multiplicacion
 ; y presente los resultados de dichas operaciones por pantalla.
 
 section .data
